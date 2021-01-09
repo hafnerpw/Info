@@ -2,15 +2,10 @@ package Aufg1;
 
 public class Hemd {
 
-    private final int id;
+    private int hemdId;
+    private String beschreibung;
+    private char farbCode;
+    private double preis;
+    private int mengeAufLager;
 
-    public Hemd(int id) {
-        this.id = id;
-    }
-
-    @Override
-    public String toString() {
-        return "ID - " + this.id;
-    }
 }
-//Hallo Walter
