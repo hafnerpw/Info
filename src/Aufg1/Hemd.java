@@ -8,6 +8,7 @@ public class Hemd {
     private double preis;
     private int mengeAufLager;
 
+
     public Hemd(int hemdId, String beschreibung, char farbCode, double preis, int mengeAufLager) {
         this.hemdId = hemdId;
         this.beschreibung = beschreibung;
@@ -26,7 +27,7 @@ public class Hemd {
         } else if (farbCode == 'g') {
             farbe = "gelb";
         }
-        return "Hemd {" + "\r\n" + "    id: " + hemdId + "\r\n" + "    beschreibung: " + beschreibung + "\r\n" +
+        return "Hemd " + "\r\n" + "    id: " + hemdId + "\r\n" + "    beschreibung: " + beschreibung + "\r\n" +
                 "    farbe: " + farbe + "\r\n" + "    preis: " + preis + "\r\n"
                 + "    menge: " + mengeAufLager + "\r\n" + "}";
     }
