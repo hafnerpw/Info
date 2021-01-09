@@ -6,5 +6,6 @@ public class KundeTest {
         Kunde k1= new Kunde(1, "Fred", "fred@fred.at");
         Kunde k2= new Kunde(1, "Fred", "fred@fred.at");
         System.out.println(k1.equals(k2));
+        System.out.println(k1.isEqual(k2));
     }
 }
