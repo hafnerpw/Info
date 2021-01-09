@@ -8,6 +8,10 @@ public class OneDay {
 
     private String monat;
 
+    public OneDay() {
+        this(0,0, "");
+    }
+
     //Getter und Setter
     public int getTag() {
         return tag;
@@ -37,7 +41,5 @@ public class OneDay {
         this.tag = tag;
         this.jahr = jahr;
         this.monat = monat;
-
-
     }
 }
