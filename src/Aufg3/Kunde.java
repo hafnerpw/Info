@@ -12,7 +12,6 @@ public class Kunde {
         return mailAdr.equals(kunde.mailAdr);
     }
 
-
     public Kunde(int id, String name, String mailAdr) {
         this.id = id;
         this.name = name;
