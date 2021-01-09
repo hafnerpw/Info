@@ -1,0 +1,10 @@
+package Aufg3;
+
+public class KundeTest {
+
+    public static void main(String[] args) {
+        Kunde k1= new Kunde(1, "Fred", "fred@fred.at");
+        Kunde k2= new Kunde(1, "Fred", "fred@fred.at");
+        System.out.println(k1.equals(k2));
+    }
+}
