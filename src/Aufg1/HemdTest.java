@@ -10,20 +10,15 @@ public class HemdTest {
         Hemd adidas = new Hemd(6, "Adidas Hemd", 'b', 65, 100);
 
 
-        displayInformation();
-
-
-
+        displayInformation(gucciHemd);
+        displayInformation(hugoBoss);
+        displayInformation(tommyHilf);
+        displayInformation(adidas);
 
     }
 
-    private String displayInformation(Hemd gucciHemd, Hemd hugoBoss, Hemd tommyHilf, Hemd adidas) {
-        System.out.println(gucciHemd);
-        System.out.println(hugoBoss);
-        System.out.println(tommyHilf);
-        System.out.println(adidas);
-
-
+    private static void displayInformation(Hemd kannHeissenWieduWillstUndHatNICHTSmitDenVariablenZuvorZuTun) {
+        System.out.println(kannHeissenWieduWillstUndHatNICHTSmitDenVariablenZuvorZuTun);
     }
 
 }
