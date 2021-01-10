@@ -6,15 +6,12 @@ public class Truck {
     private static int anzahlTrucker;
 
     // max bestimmten
-    public static int ladeVolumenMax;
+    private static double ladeVolumenMax;  //TODO hier war int, muss natürlich double sein damits mit dem gewicht passt
 
 
-
-    public static int getLadeVolumenMax() {
+    public static double getLadeVolumenMax() {
         return Truck.ladeVolumenMax;
     }
-
-
 
 
     //Klassenmethode deklarieren
@@ -22,7 +19,7 @@ public class Truck {
         return Truck.anzahlTrucker;
     }
 
-    public void erhöheAnzahlTrucks(){
+    public void erhöheAnzahlTrucks() {
         ++Truck.anzahlTrucker;
     }
 
@@ -39,12 +36,16 @@ public class Truck {
         this.kennZeichen = kennZeichen;
         this.ladeVolumen = ladeVolumen;
         ++anzahlTrucker;
+
+        /*TODO Vorher :
         if (Truck.ladeVolumenMax > this.ladeVolumen) {
 
-        }
-        else {
+        } else {
             int ladeVolumenMax = (int) this.ladeVolumen;
+        }*/
 
+        if(Truck.getLadeVolumenMax()< this.ladeVolumen){
+            Truck.ladeVolumenMax = this.ladeVolumen;
         }
     }
 
