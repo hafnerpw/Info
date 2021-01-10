@@ -1,4 +1,4 @@
-package Aufgb4;
+package Aufg4;
 
 import java.util.Arrays;
 

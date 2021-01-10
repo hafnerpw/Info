@@ -1,6 +1,4 @@
-package Aufgb4;
-
-import Aufg2.OneDay;
+package Aufg4;
 
 public class OneDayTest2 {
     public static void main(String[] args) {
