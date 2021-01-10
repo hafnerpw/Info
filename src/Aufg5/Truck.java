@@ -7,11 +7,11 @@ public class Truck {
 
 
     //Klassenmethode deklarieren
-    private static int getAnzahlTrucker() {
+    public static int getAnzahlTrucker() {
         return Truck.anzahlTrucker;
     }
 
-    private void erhöheAnzahlTrucks(){
+    public void erhöheAnzahlTrucks(){
         ++Truck.anzahlTrucker;
     }
 

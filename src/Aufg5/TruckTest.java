@@ -17,5 +17,6 @@ public class TruckTest {
         System.out.println("Anzahl der Trucks: " + Truck.getAnzahlTrucker());
 
 
+
     }
 }
