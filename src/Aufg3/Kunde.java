@@ -19,7 +19,7 @@ public class Kunde {
         this.mailAdr = mailAdr;
     }
 
-    void displayKunde() {
+     void displayKunde() {
         System.out.println("ID: " + id);
         System.out.println("Name: " + name);
         System.out.println("E-Mail: " + mailAdr);
