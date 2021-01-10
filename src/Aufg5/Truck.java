@@ -5,6 +5,17 @@ public class Truck {
     //Klassenvariable deklarieren
     private static int anzahlTrucker;
 
+    // max bestimmten
+    public static int ladeVolumenMax;
+
+
+
+    public static int getLadeVolumenMax() {
+        return Truck.ladeVolumenMax;
+    }
+
+
+
 
     //Klassenmethode deklarieren
     public static int getAnzahlTrucker() {
@@ -28,6 +39,13 @@ public class Truck {
         this.kennZeichen = kennZeichen;
         this.ladeVolumen = ladeVolumen;
         ++anzahlTrucker;
+        if (Truck.ladeVolumenMax > this.ladeVolumen) {
+
+        }
+        else {
+            int ladeVolumenMax = (int) this.ladeVolumen;
+
+        }
     }
 
 

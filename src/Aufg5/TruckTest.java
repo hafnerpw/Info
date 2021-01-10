@@ -16,6 +16,8 @@ public class TruckTest {
 
         System.out.println("Anzahl der Trucks: " + Truck.getAnzahlTrucker());
 
+        System.out.println("Maximum ladegewicht " + Truck.getLadeVolumenMax());
+
 
 
     }
