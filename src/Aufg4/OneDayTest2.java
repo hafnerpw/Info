@@ -10,6 +10,8 @@ public class OneDayTest2 {
         waltersBday.setJahr(1997);
         System.out.println("Walters Bday ist am: " + waltersBday.getTag()+"." +" "+ waltersBday.getMonat() +" "+ waltersBday.getJahr());
 
+        OneDay2 yarrakTag = new OneDay2(1,2000,"Januar");
+
         waltersBday.displayDate();
 
     }

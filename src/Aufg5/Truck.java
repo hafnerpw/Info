@@ -5,9 +5,14 @@ public class Truck {
     //Klassenvariable deklarieren
     private static int anzahlTrucker;
 
+
     //Klassenmethode deklarieren
     private static int getAnzahlTrucker() {
         return Truck.anzahlTrucker;
+    }
+
+    private void erhöheAnzahlTrucks(){
+        ++Truck.anzahlTrucker;
     }
 
     //Attribute
@@ -23,10 +28,6 @@ public class Truck {
         this.kennZeichen = kennZeichen;
         this.ladeVolumen = ladeVolumen;
         ++anzahlTrucker;
-    }
-
-    public Truck() {
-
     }
 
 
