@@ -5,12 +5,6 @@ public class StudienBG {
     private String Semester;
     private int SemesterJahr;
 
-    // HILFE
-    StudienBG semesterbeginn = new StudienBG("WiSe", 2021);
-
-
-
-
 
     public  StudienBG(String semester, int semesterJahr) {
         Semester = semester;
