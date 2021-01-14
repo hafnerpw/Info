@@ -5,16 +5,22 @@ import java.util.Date;
 public class Student extends Person {
 
     private String Studiengang;
-    private Date Studienbeginn;
+    private StudienBG Studienbeginn;
     private int Matrikelnummer;
-    private int Abinote;
+    private double Abinote;
 
-    public Student(String name, String vorname, int alter, String studiengang, Date studienbeginn, int matrikelnummer, int abiNote) {
+    public Student(String name, String vorname, int alter, String studiengang, StudienBG studienbeginn, int matrikelnummer, double abiNote) {
         super(name, vorname, alter);
         this.Studiengang = studiengang;
         this.Studienbeginn = studienbeginn;
         Matrikelnummer = matrikelnummer;
         this.Abinote = abiNote;
+    }
+    public String displayInformation() {
+        String str = "";
+        str += this.getVorname() + " " + this.getName() + "\n" + this.getAlter() + " Jahre alt" + "\n" + "Abinote " +
+        this.getAbinote() + "\n" + "MatrikelNr: " + this.getMatrikelnummer() + "\n" + this.Studienbeginn.getSemester() + this.Studienbeginn.getSemesterJahr();
+        return str;
     }
 
     public String getStudiengang() {
@@ -25,11 +31,11 @@ public class Student extends Person {
         Studiengang = studiengang;
     }
 
-    public Date getStudienbeginn() {
+    public StudienBG getStudienbeginn() {
         return Studienbeginn;
     }
 
-    public void setStudienbeginn(Date studienbeginn) {
+    public void setStudienbeginn(StudienBG studienbeginn) {
         Studienbeginn = studienbeginn;
     }
 
@@ -41,11 +47,11 @@ public class Student extends Person {
         Matrikelnummer = matrikelnummer;
     }
 
-    public int getAbinote() {
+    public double getAbinote() {
         return Abinote;
     }
 
-    public void setAbinote(int abinote) {
+    public void setAbinote(double abinote) {
         Abinote = abinote;
     }
 }
