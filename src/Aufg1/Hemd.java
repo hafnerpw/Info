@@ -17,6 +17,12 @@ public class Hemd {
         this.mengeAufLager = mengeAufLager;
     }
 
+    void displayKunde() {
+        System.out.println("ID: " + hemdId);
+        System.out.println("Name: " + preis);
+        System.out.println("E-Mail: " + mengeAufLager);
+    }
+
     @Override
     public String toString() {
         String farbe = "";

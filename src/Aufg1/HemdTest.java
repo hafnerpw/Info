@@ -15,6 +15,8 @@ public class HemdTest {
         displayInformation(tommyHilf);
         displayInformation(adidas);
 
+        gucciHemd.displayKunde();
+
     }
 
     private static void displayInformation(Hemd kannHeissenWieduWillstUndHatNICHTSmitDenVariablenZuvorZuTun) {
