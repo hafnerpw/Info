@@ -10,10 +10,12 @@ public class StudienBG {
 
 
 
-    public String StudienBG(String semester, int semesterJahr) {
+
+
+    public  StudienBG(String semester, int semesterJahr) {
         Semester = semester;
         SemesterJahr = semesterJahr;
-        return semester + semesterJahr;
+
     }
 
 
