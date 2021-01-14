@@ -16,4 +16,36 @@ public class Student extends Person {
         Matrikelnummer = matrikelnummer;
         this.Abinote = abiNote;
     }
+
+    public String getStudiengang() {
+        return Studiengang;
+    }
+
+    public void setStudiengang(String studiengang) {
+        Studiengang = studiengang;
+    }
+
+    public Date getStudienbeginn() {
+        return Studienbeginn;
+    }
+
+    public void setStudienbeginn(Date studienbeginn) {
+        Studienbeginn = studienbeginn;
+    }
+
+    public int getMatrikelnummer() {
+        return Matrikelnummer;
+    }
+
+    public void setMatrikelnummer(int matrikelnummer) {
+        Matrikelnummer = matrikelnummer;
+    }
+
+    public int getAbinote() {
+        return Abinote;
+    }
+
+    public void setAbinote(int abinote) {
+        Abinote = abinote;
+    }
 }
