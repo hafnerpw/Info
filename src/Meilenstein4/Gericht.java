@@ -14,13 +14,15 @@ public class Gericht {
 
     public void zubereitung() {
         String s = this.name;
-        if (this instanceof Pizza)
-
+        if (this instanceof Pizza) {
             for (String e : Zutaten) {
                 s += "- " + e "\n";
             }
-
-        else if ()
+        } else if (this instanceof Burger) {
+            for (String e : Zutaten) {
+                s += "- " + e "\n";
+            }
+        }
 
 
 
