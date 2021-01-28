@@ -32,6 +32,12 @@ public class Sortieren {
 
 
         scan.close();
+        int e = 1;
+        for (int i : liste) {
+
+            System.out.println("Ausgabe der Liste " + liste + "Anzahl " + e++);
+
+        }
     }
 
 }
