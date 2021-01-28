@@ -21,14 +21,17 @@ public class StudienBG {
     }
 
     public void setSemester(String semester) {
+
         Semester = semester;
     }
 
     public int getSemesterJahr() {
+
         return SemesterJahr;
     }
 
     public void setSemesterJahr(int semesterJahr) {
+
         SemesterJahr = semesterJahr;
     }
 }

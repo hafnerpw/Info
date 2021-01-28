@@ -10,7 +10,7 @@ public class StudentTest {
 
         System.out.println(student1.displayInformation());
 
-        System.out.println("hi");
+        System.out.println("ende des programms");
 
     }
 }
