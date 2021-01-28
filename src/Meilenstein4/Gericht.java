@@ -4,40 +4,26 @@ import java.util.ArrayList;
 
 public class Gericht {
 
+    public Gericht(String name) {
+        this.name = name;
+    }
+
     private String name;
     private ArrayList<String> Zutaten = new ArrayList<String>();
 
-    public void IstBelegtMit(String s) {
-
-        Zutaten.add(s);
-    }
-
     public void zubereitung() {
-        String s = this.name;
-        if (this instanceof Pizza) {
-            for (String e : Zutaten) {
-                s += "- " + e "\n";
-            }
-        } else if (this instanceof Burger) {
-            for (String e : Zutaten) {
-                s += "- " + e "\n";
-            }
+        if(this instanceof Pizza){
+            System.out.println("Pizza " + this.name + "Pizzaboden, belegt mit:");
+        }else if(this instanceof Burger){
+            System.out.println(this.name + ". Brötchen mit:");
         }
 
-
-
-
-
-
-    /*
-    public void zubereitung() {
-        String s = this.name;
-        for (String e : Zutaten) {
-
-        } */
+        for (String s: this.Zutaten){
+            System.out.println("- " + s);
+        }
     }
 
-
-
-
+    public void istBelegtMit(String zutat) {
+        Zutaten.add(zutat);
+    }
 }

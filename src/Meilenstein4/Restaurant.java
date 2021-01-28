@@ -4,6 +4,7 @@ public class Restaurant {
 
     public static void main(String[] args) {
         Pizza funghi = new Pizza("Funghi");
+
         funghi.istBelegtMit("Mozzarella");
         funghi.istBelegtMit("Pilze");
         Pizza hawaii = new Pizza("Hawaii");
