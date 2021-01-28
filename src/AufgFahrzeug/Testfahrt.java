@@ -1,14 +1,18 @@
 package AufgFahrzeug;
 
+import java.util.ArrayList;
+
 public class Testfahrt {
 
-    private double fahrzeit;
 
-    public Testfahrt(double fahrzeit) {
-        this.fahrzeit = fahrzeit;
+    public ArrayList<Double> fahrtzeiten = new ArrayList<>();
+    public Fahrzeug fahrzeug;
+
+    public Testfahrt(Fahrzeug fahrzeug) {
+        this.fahrzeug = fahrzeug;
     }
 
-    public double getFahrzeit() {
-        return fahrzeit;
+    public void addFahrzeit(double d){
+        fahrtzeiten.add(d);
     }
 }
