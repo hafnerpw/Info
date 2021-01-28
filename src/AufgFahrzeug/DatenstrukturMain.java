@@ -16,6 +16,8 @@ public class DatenstrukturMain {
         testfahrten.get(1).addFahrzeit(4.6);
         testfahrten.add(new Testfahrt(peugeauoite));
         testfahrten.get(2).addFahrzeit(7.2);
+        testfahrten.add(new Testfahrt(new Fahrzeug("Nissan")));
+        testfahrten.get(2).addFahrzeit(17.1);
 
         for (Testfahrt fahrt: testfahrten) {
             System.out.println(fahrt.fahrzeug.name);
