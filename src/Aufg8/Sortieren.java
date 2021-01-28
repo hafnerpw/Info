@@ -2,6 +2,7 @@ package Aufg8;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class Sortieren {
@@ -18,13 +19,19 @@ public class Sortieren {
 
 
         }
-        System.out.println("Vor der Sortierung");
-        System.out.println(liste);
+        System.out.println("Vor der Sortierung \n" + liste);
+
 
         Collections.sort(liste);
-        System.out.println("Nach der Sortierung");
+        System.out.println("Nach der Sortierung \n" + liste);
+
+
+        System.out.println("Aufsteigend sortiert!");
+        liste.sort(Collections.reverseOrder());
         System.out.println(liste);
 
+
+        scan.close();
     }
 
 }
