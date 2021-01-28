@@ -1,7 +1,9 @@
 package AufgFahrzeug;
 
 public class Fahrzeug {
+    String name;
 
-    public Fahrzeug() {
+    public Fahrzeug(String name) {
+        this.name = name;
     }
 }
