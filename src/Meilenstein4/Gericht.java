@@ -7,28 +7,33 @@ public class Gericht {
     private String name;
     private ArrayList<String> Zutaten = new ArrayList<String>();
 
-    public String getName() {
-        return name;
+    public void IstBelegtMit(String s) {
+
+        Zutaten.add(s);
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    public void zubereitung() {
+        String s = this.name;
+        if (this instanceof Pizza)
 
-    public ArrayList<String> getZutaten() {
-        return Zutaten;
-    }
+            for (String e : Zutaten) {
+                s += "- " + e "\n";
+            }
 
-    public void setZutaten(ArrayList<String> zutaten) {
-        Zutaten = zutaten;
-    }
+        else if ()
+
+
+
+
+
+
     /*
     public void zubereitung() {
         String s = this.name;
         for (String e : Zutaten) {
 
         } */
-}
+    }
 
 
 

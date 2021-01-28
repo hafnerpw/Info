@@ -14,6 +14,7 @@ public class Restaurant {
         hamburger.istBelegtMit("Hackfleisch");
         hamburger.istBelegtMit("Ketchup");
         hamburger.istBelegtMit("Senf");
+
         Burger cheeseburger = new Burger("Cheeseburger");
         cheeseburger.istBelegtMit("Hackfleisch");
         cheeseburger.istBelegtMit("Käse");
