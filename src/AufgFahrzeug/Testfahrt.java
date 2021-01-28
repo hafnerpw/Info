@@ -7,4 +7,8 @@ public class Testfahrt {
     public Testfahrt(double fahrzeit) {
         this.fahrzeit = fahrzeit;
     }
+
+    public double getFahrzeit() {
+        return fahrzeit;
+    }
 }
