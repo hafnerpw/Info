@@ -1,12 +1,9 @@
 package Block2a;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
-
-import static java.util.stream.Collectors.toList;
 
 public class IntStreamTest {
 
@@ -22,8 +19,11 @@ public class IntStreamTest {
      * anschließend die übrig gebliebenden geraden Zahlen um 10 zu vervielfachen. Geben Sie das
      * Ergebnis durch einen Terminaloperator auf der Konsole aus.
      */
-    public static void test1(){
+    public static void test1() {
         // Methoden: range(), filter(). Und forEach zum ausgeben.
+
+        IntStream intStream = IntStream.range(0, 201).filter(x -> x % 2 == 0).map(x -> x * 10);
+        intStream.forEach(System.out::println);
     }
 
     /**
@@ -34,7 +34,11 @@ public class IntStreamTest {
      * Speichern Sie die sortierte Liste mit Hilfe von collect in einer weiteren Liste ab. Geben Sie diese
      * auf der Konsole aus.
      */
-    public static void test2(){
+    public static void test2() {
         // Methoden: Random().ints, filter, sorted und collect(Collectors.toList()
+
+        List<Integer> numbers = new Random().ints(100, 1, 1000).boxed()
+                .filter(x -> x % 5 != 0).sorted().collect(Collectors.toList());
+        numbers.forEach(System.out::println);
     }
 }
