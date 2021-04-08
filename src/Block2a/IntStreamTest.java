@@ -26,10 +26,8 @@ public class IntStreamTest {
         // Methoden: range(), filter(). Und forEach zum ausgeben.
 
         // Creating an IntStream
-        IntStream stream = IntStream.range(1, 101);
+        IntStream stream = IntStream.range(1, 101).filter(stream -> stream % 2 == 0).map(stream -> stream * 10);
 
-        List<Integer> zahlenliste = (List<Integer>) IntStream.range(1, 101);
-        List<Integer> geradeZahlen = zahlenliste.stream().filter(zahlenliste -> / 2).collect(Collectors.toList());
 
         geradeZahlen.forEach(zahlenliste -> System.out.println(zahlenliste * 10));
 
