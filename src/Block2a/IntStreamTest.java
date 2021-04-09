@@ -1,14 +1,7 @@
 package Block2a;
 
-import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.List;
-import java.util.Random;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 import java.util.stream.Stream;
-
-import static java.util.stream.Collectors.toList;
 
 public class IntStreamTest {
 
@@ -24,9 +17,9 @@ public class IntStreamTest {
      * @param s Stream of Humans to work with.
      */
     public static void findJohnnySins(Stream<Human> s){
-        //TODO
-        s = s.filter( schaffst du =) );
-        s.forEach(System.out::println);
+        s.filter(x -> x.getGender() == Human.Sex.MALE && x.getAge() >= 18 && x.getCocklength() > 15)
+                .sorted(Comparator.comparing(Human::getCocklength).reversed())
+                .limit(15).forEach(System.out::println);
     }
 
     /**
