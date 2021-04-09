@@ -25,8 +25,8 @@ public class Restaurant {
         cheeseburger.istBelegtMit("Gurke");
         Gericht[] speisekarte = new Gericht[]{funghi,
                 hawaii, hamburger, cheeseburger};
-        for (
-                Gericht gericht : speisekarte) {
+
+        for (Gericht gericht : speisekarte) {
             gericht.zubereitung();
         }
     }

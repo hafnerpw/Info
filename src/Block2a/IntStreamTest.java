@@ -12,8 +12,10 @@ import static java.util.stream.Collectors.toList;
 
 public class IntStreamTest {
 
+
     public static void main(String[] args) {
         Stream<Human> humanStream = Human.generateList(100);
+
         findJohnnySins(humanStream);
     }
 
@@ -23,9 +25,15 @@ public class IntStreamTest {
      * Du darfst nur stream transformatoren verwenden.
      * @param s Stream of Humans to work with.
      */
-    public static void findJohnnySins(Stream<Human> s){
+    public static void findJohnnySins(Stream<Human> s) {
         //TODO
-        s = s.filter( schaffst du =) );
+
+        s = s.filter(x -> x.getAge() >= 18 && x.getCocklength > 20).sorted(Comparator.comparing(Human::getCocklength).reversed()).limit(10);
+
+        // evtl hilfe für 10 grössten yarraks
+        //Optional<Integer> max = list.stream().max(Comparator.naturalOrder());
+
+
         s.forEach(System.out::println);
     }
 
@@ -36,9 +44,11 @@ public class IntStreamTest {
      * anschließend die übrig gebliebenden geraden Zahlen um 10 zu vervielfachen. Geben Sie das
      * Ergebnis durch einen Terminaloperator auf der Konsole aus.
      */
-    public static void test1(){
+    public static void test1() {
         // Methoden: range(), filter(). Und forEach zum ausgeben.
 
+
+        // IntStream.range(1, 101).filter(x -> x % 2 == 0).map(x -> x * 10).forEach(System.out::println);
     }
 
     /**
