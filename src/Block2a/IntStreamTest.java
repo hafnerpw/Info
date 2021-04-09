@@ -1,18 +1,32 @@
 package Block2a;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
 
 public class IntStreamTest {
 
     public static void main(String[] args) {
-        test1();
-        test2();
+        Stream<Human> humanStream = Human.generateList(100);
+        findJohnnySins(humanStream);
+    }
+
+    /**
+     * Wir suchen neue Pornodarsteller, du hast einen Stream von Bewerbern(Humans) gegeben.
+     * Finde alle Männer die volljährig sind und eine Cocklength > 20 haben.Gib die 10 größten cocklengths aus.
+     * Du darfst nur stream transformatoren verwenden.
+     * @param s Stream of Humans to work with.
+     */
+    public static void findJohnnySins(Stream<Human> s){
+        //TODO
+        s = s.filter( schaffst du =) );
+        s.forEach(System.out::println);
     }
 
     /**
@@ -24,12 +38,6 @@ public class IntStreamTest {
      */
     public static void test1(){
         // Methoden: range(), filter(). Und forEach zum ausgeben.
-
-        // Creating an IntStream
-        IntStream stream = IntStream.range(1, 101).filter(stream -> stream % 2 == 0).map(stream -> stream * 10);
-
-
-        geradeZahlen.forEach(zahlenliste -> System.out.println(zahlenliste * 10));
 
     }
 
